@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Indicates that the text to speech is not yet initialized -->
+    <item name="TextToSpeechStateNotInitialized" type="id"/>
+    <!-- Indicates that the text to speech is ready to speak -->
+    <item name="TextToSpeechStateReadyToSpeak" type="id"/>
+    <!-- Indicates that the text to speech is speaking -->
+    <item name="TextToSpeechStateSpeaking" type="id"/>
+    <!-- Indicates that the text to speech is in destruction -->
+    <item name="TextToSpeechStateInDestruction" type="id"/>
+    
+    <!-- Memorized order to clear -->
+    <item name="SpeecherOrderClear" type="id"/>
+    <!-- Memorized order to change of engine (Parameter : EngineInfo) -->
+    <item name="SpeecherOrderSetEngine" type="id"/>
+    <!-- Memorized order to change of language (Parameter : Locale) -->
+    <item name="SpeecherOrderSetLocale" type="id"/>
+    <!-- Memorized order to change of speak normal (Parameter : String) -->
+    <item name="SpeecherOrderSpeakNormal" type="id"/>
+    <!-- Memorized order to change of speak banal (Parameter : String) -->
+    <item name="SpeecherOrderSpeakBanal" type="id"/>
+    <!-- Memorized order to change of speak urgent (Parameter : String) -->
+    <item name="SpeecherOrderSpeakUrgent" type="id"/>
+
+</resources>
