@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+<manifest
     package="jhelp.android.api"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:versionCode="1"
-    android:versionName="1.0" >
+    android:versionName="1.0">
 
-    <uses-sdk android:minSdkVersion="15" />
-
+    <uses-sdk android:minSdkVersion="19"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <application
         android:icon="@drawable/ic_launcher"
-        android:label="@string/app_name" >
-        <activity
-            android:name=".test.TestBufferedImageViewActivity"
-            android:label="TestBufferedImageViewActivity" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        android:label="@string/app_name">
 
-                <category android:name="android.intent.category.LAUNCHER" />
+        <activity
+            android:name="jhelp.android.api.engine.GameActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="nosensor">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN">
+                </action>
+                <category android:name="android.intent.category.LAUNCHER">
+                </category>
             </intent-filter>
         </activity>
 
-        <service
-            android:name="jhelp.android.api.text2speech.TextToSpeechManagerService"
-            android:enabled="true"
-            android:exported="true"
-            android:process="jhelp.android.api.text2speech.TextToSpeechManagerService" />
+
     </application>
 
 </manifest>
